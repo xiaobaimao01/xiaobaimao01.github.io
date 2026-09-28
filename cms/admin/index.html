@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="robots" content="noindex" />
+  <title>Goddess Admin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <script src="https://unpkg.com/@sveltia/cms/dist/sveltia-cms.js"></script>
+  <script>
+    setInterval(() => {
+        try {
+          let template = document.querySelector("[data-key-path=template]").querySelector("textarea").value
+          const nums = document.querySelectorAll(`[data-typed-key-path="properties.*.property"]`).length
+          for (let i = 0; i < nums; i++) {
+            let property = document.querySelector(`[data-key-path="properties.${i}.property"] input`)?.value ?? "undefined" 
+            let value = document.querySelector(`[data-key-path="properties.${i}.value"] textarea`)?.value ?? "undefined"
+            template = template.replace(`{{${property}}}`, value)
+          }
+          document.querySelector("[data-key-path=output]").querySelector("textarea").value = template
+          if (document.activeElement.parentElement.parentElement.parentElement.getAttribute("data-key-path") == "output") {
+            navigator.clipboard.writeText(template);
+          }
+          window._copyableOutput = template
+        }
+        catch (e) {
+          console.error(e)
+        }
+      }, 1000)
+  </script>
+  <style>
+    body {
+      --sui-font-family-default: "Crimson Pro", serif;
+      --sui-font-size-default: 18px;
+      --sui-textbox-font-family: "Crimson Pro", serif;
+      --sui-textbox-font-size: 18px;
+      --sui-primary-foreground-color: hsl(283 55% 20% / 1);
+    }
+  </style>
+</body>
+
+</html>
