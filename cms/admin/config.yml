@@ -15,7 +15,7 @@ collections:
     icon: auto_stories
     label_singular: Chapter
     folder: /001/chapters
-    summary: "{{book}} - Ch. {{title}} - Publish at {{date_publish}}"
+    summary: "{{book}} - Ch. {{title}} - Publish at {{date_publish}} - Posted: {{posted}}"
     sortable_fields: [title, date_publish]
     view_filters:
       filters:
@@ -45,6 +45,7 @@ collections:
         }
       - { label: Summary, name: body, widget: text }
       - { label: Premium, name: premium, widget: boolean, default: false }
+      - { label: Posted, name: posted, widget: boolean, default: false }
       - {
           label: Scene 0,
           name: scene0,
