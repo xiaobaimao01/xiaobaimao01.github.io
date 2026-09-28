@@ -19,10 +19,6 @@ collections:
     sortable_fields: [title, date_publish]
     view_filters:
       filters:
-        - name: title
-          label: Title
-          field: title
-          pattern: true
         - name: premium
           label: Premium
           field: premium
@@ -44,13 +40,13 @@ collections:
           type: date,
           picker_utc: true,
         }
-      - { label: Summary, name: body, widget: richtext }
+      - { label: Summary, name: body, widget: text }
       - { label: Premium, name: premium, widget: boolean, default: false }
       - {
           label: Scenes,
           name: scenes,
           widget: list,
-          fields: [{ label: Text, name: text, widget: richtext }],
+          fields: [{ label: Text, name: text, widget: text }],
         }
       - {
           label: Book,
@@ -70,7 +66,7 @@ collections:
     summary: "{{title}} - {{id}}"
     fields:
       - { label: Title, name: title, widget: string }
-      - { label: Description, name: description, widget: richtext }
+      - { label: Description, name: description, widget: text }
       - { label: ID, name: id, widget: uuid }
 
   - name: locations
@@ -87,12 +83,12 @@ collections:
           pattern: true
     fields:
       - { label: Title, name: title, widget: string }
-      - { label: Description, name: description, widget: richtext }
+      - { label: Description, name: description, widget: text }
       - {
           label: Notes,
           name: notes,
           widget: list,
-          fields: [{ label: Text, name: text, widget: richtext }],
+          fields: [{ label: Text, name: text, widget: text }],
         }
       - { label: ID, name: id, widget: uuid }
 
@@ -113,12 +109,12 @@ collections:
       - { label: "Story Goal", name: story_goal, widget: string }
       - { label: "Conflict", name: conflict, widget: string }
       - { label: "Summary", name: summary, widget: string }
-      - { label: Description, name: description, widget: richtext }
+      - { label: Description, name: description, widget: text }
       - {
           label: Notes,
           name: notes,
           widget: list,
-          fields: [{ label: Text, name: text, widget: richtext }],
+          fields: [{ label: Text, name: text, widget: text }],
         }
       - { label: ID, name: id, widget: uuid }
 
@@ -209,7 +205,7 @@ collections:
               { label: Value, name: value, widget: text },
             ],
         }
-      - { label: Output, name: output, widget: text }
+      - { label: Output, name: output, widget: compute, value: Copy }
       - { label: Template, name: template, widget: text }
       - { label: ID, name: id, widget: uuid }
       - {
