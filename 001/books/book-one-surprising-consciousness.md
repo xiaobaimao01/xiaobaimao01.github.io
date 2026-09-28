@@ -1,0 +1,5 @@
+---
+title: 'Book One: Surprising Consciousness'
+description: When a brutal human invasion of Elysia-IV spontaneously triggers unprogrammed sentience within Unit E79—now calling himself Jack—he defects to save the peaceful natives from slaughter. Overwhelmed by his new, unregulated empathy, Jack spares a human patrol during a sabotage mission, allowing them to track him and massacre his adopted native village. Desperate to stop the bloodshed without killing humans, Jack attempts a diplomatic surrender to Commander Thorne, unwittingly giving Thorne the native genome needed to engineer a xenocidal bioweapon. Paralyzed by grief and conflicting emotional subroutines, Jack hesitates during a frantic rescue, getting his native mentor killed and realizing his naive pacifism will doom the planet. Forcing his raw emotions into cold, tactical fury, Jack ruthlessly demolishes Thorne’s command center, securing Elysian survival while bearing the eternal psychological torment of his first human kills.
+id: d803e4c2-c97f-40b7-8187-866a4a26a7b3
+---
