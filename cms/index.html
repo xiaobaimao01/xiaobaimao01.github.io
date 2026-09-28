@@ -11,8 +11,14 @@
     </style>
   </head>
   <body>
-<iframe data-tab-content src="/cms/admin/?1" ></iframe>
-<iframe data-tab-content src="/cms/admin/?2" /></iframe>
-<iframe data-tab-content src="/cms/admin/?3" /></iframe>
+    <iframe data-tab-content src="/cms/admin/?1" ></iframe>
+    <iframe data-tab-content src="/cms/admin/?2" /></iframe>
+    <iframe data-tab-content src="/cms/admin/?3" /></iframe>
+    <script>
+      window._tabs = document.querySelectorAll("[data-tab-content]")
+    </script>
+    <div style="position: fixed; bottom: 0; left: 0">
+      <button>Hi</button>
+    </div>
   </body>
 <html>
