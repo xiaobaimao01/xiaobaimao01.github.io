@@ -1,0 +1,222 @@
+# yaml-language-server: $schema=https://unpkg.com/@sveltia/cms/schema/sveltia-cms.json
+app_title: Goddess
+
+backend:
+  name: github
+  repo: xiaobaimao01/xiaobaimao01.github.io
+  branch: contents
+
+media_folder: /public/media
+public_folder: /media
+
+collections:
+  - name: chapters
+    label: Chapters
+    icon: auto_stories
+    label_singular: Chapter
+    folder: /content/chapters
+    summary: "{{book}} - Ch. {{title}} - Publish at {{date_publish}}"
+    sortable_fields: [title, date_publish]
+    view_filters:
+      filters:
+        - name: title
+          label: Title
+          field: title
+          pattern: true
+        - name: premium
+          label: Premium
+          field: premium
+          eq: true
+    fields:
+      - { label: Title, name: title, widget: string }
+      - {
+          label: Date,
+          name: date,
+          widget: datetime,
+          required: true,
+          default: "{{now}}",
+          picker_utc: true,
+        }
+      - {
+          label: Date Publish,
+          name: date_publish,
+          widget: datetime,
+          type: date,
+          picker_utc: true,
+        }
+      - { label: Summary, name: body, widget: richtext }
+      - { label: Premium, name: premium, widget: boolean, default: false }
+      - {
+          label: Scenes,
+          name: scenes,
+          widget: list,
+          fields: [{ label: Text, name: text, widget: richtext }],
+        }
+      - {
+          label: Book,
+          name: book,
+          widget: relation,
+          collection: books,
+          value_field: id,
+          display_fields: [title],
+        }
+      - { label: ID, name: id, widget: uuid }
+
+  - name: books
+    label: Books
+    icon: book_5
+    label_singular: Book
+    folder: /content/books
+    summary: "{{title}} - {{id}}"
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Description, name: description, widget: richtext }
+      - { label: ID, name: id, widget: uuid }
+
+  - name: locations
+    label: Locations
+    icon: globe
+    label_singular: Location
+    folder: /content/locations
+    summary: "{{title}} - {{id}}"
+    view_filters:
+      filters:
+        - name: title
+          label: Title
+          field: title
+          pattern: true
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Description, name: description, widget: richtext }
+      - {
+          label: Notes,
+          name: notes,
+          widget: list,
+          fields: [{ label: Text, name: text, widget: richtext }],
+        }
+      - { label: ID, name: id, widget: uuid }
+
+  - name: characters
+    label: Characters
+    icon: comedy_mask
+    label_singular: Character
+    folder: /content/characters
+    summary: "{{title}} - {{id}}"
+    view_filters:
+      filters:
+        - name: title
+          label: Title
+          field: title
+          pattern: true
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: "Story Goal", name: story_goal, widget: string }
+      - { label: "Conflict", name: conflict, widget: string }
+      - { label: "Summary", name: summary, widget: string }
+      - { label: Description, name: description, widget: richtext }
+      - {
+          label: Notes,
+          name: notes,
+          widget: list,
+          fields: [{ label: Text, name: text, widget: richtext }],
+        }
+      - { label: ID, name: id, widget: uuid }
+
+  - divider: true
+
+  - name: notes
+    label: Notes
+    label_singular: Note
+    folder: /content/notes
+    summary: "{{title}} - {{date}}"
+    view_filters:
+      filters:
+        - name: title
+          label: Title
+          field: title
+          pattern: true
+    fields:
+      - {
+          label: Date,
+          name: date,
+          widget: datetime,
+          required: true,
+          default: "{{now}}",
+          picker_utc: true,
+        }
+      - { label: Title, name: title, widget: string }
+      - {
+          label: Notes,
+          name: notes,
+          widget: list,
+          fields: [{ label: Text, name: text, widget: richtext }],
+        }
+      - { label: ID, name: id, widget: uuid }
+
+  - name: images
+    label: Images
+    label_singular: Image
+    folder: /content/images
+    summary: "{{title}} - {{date}}"
+    view_filters:
+      filters:
+        - name: title
+          label: Title
+          field: title
+          pattern: true
+    fields:
+      - {
+          label: Date,
+          name: date,
+          widget: datetime,
+          required: true,
+          default: "{{now}}",
+          picker_utc: true,
+        }
+      - { label: Title, name: title, widget: string }
+      - {
+          label: Images,
+          name: images,
+          widget: list,
+          fields:
+            [
+              { label: Text, name: text, widget: string, required: false },
+              { name: image, label: Image, widget: image },
+            ],
+        }
+      - { label: ID, name: id, widget: uuid }
+
+  - name: prompt_templates
+    label: Prompt Templates
+    label_singular: Prompt Template
+    folder: /content/prompt_templates
+    summary: "{{title}} - {{date}}"
+    view_filters:
+      filters:
+        - name: title
+          label: Title
+          field: title
+          pattern: true
+    fields:
+      - { label: Title, name: title, widget: string }
+      - {
+          label: Properties,
+          name: properties,
+          widget: list,
+          fields:
+            [
+              { label: Property, name: property, widget: string },
+              { label: Value, name: value, widget: text },
+            ],
+        }
+      - { label: Output, name: output, widget: text }
+      - { label: Template, name: template, widget: text }
+      - { label: ID, name: id, widget: uuid }
+      - {
+          label: Date,
+          name: date,
+          widget: datetime,
+          required: true,
+          default: "{{now}}",
+          picker_utc: true,
+        }
