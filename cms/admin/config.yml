@@ -23,13 +23,16 @@ collections:
           label: Premium
           field: premium
           eq: true
+        - name: not_posted
+          label: "Not Posted"
+          field: posted
+          eq: false
     fields:
       - { label: Title, name: title, widget: string }
       - {
           label: Date,
           name: date,
           widget: datetime,
-          required: true,
           default: "{{now}}",
           picker_utc: true,
         }
@@ -56,11 +59,13 @@ collections:
           label: Scene 2,
           name: scene2,
           widget: text,
+          required: false,
         }
       - {
           label: Scene 3,
           name: scene3,
           widget: text,
+          required: false,
         }
       - {
           label: Book,
