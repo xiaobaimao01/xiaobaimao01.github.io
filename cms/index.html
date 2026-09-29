@@ -14,16 +14,22 @@
       html, body {
         margin: 0;
       }
+      button {
+        background: black;
+        color: white;
+        padding: 0.5rem;
+      }
     </style>
   </head>
   <body>
     <iframe data-tab-content src="/cms/admin/?1" ></iframe>
-    <iframe data-tab-content src="/cms/admin/?2" /></iframe>
-    <iframe data-tab-content src="/cms/admin/?3" /></iframe>
+    <iframe data-tab-content src="/cms/admin/?2" ></iframe>
+    <iframe data-tab-content src="/cms/admin/?3" ></iframe>
+    <iframe data-tab-content src="/cms/admin/?4" ></iframe>
     <script>
       window._tabs = document.querySelectorAll("[data-tab-content]")
     </script>
-    <div style="position: fixed; bottom: 3rem; left: 0; font-size: 20px">
+    <div style="position: fixed; bottom: 4rem; left: 0; font-size: 20px">
       <button onclick="window.scrollBy({top: -window.innerHeight})">Up</button>
     </div>
     <div style="position: fixed; bottom: 2rem; left: 0; font-size: 20px">
