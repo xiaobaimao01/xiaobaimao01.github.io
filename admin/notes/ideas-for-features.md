@@ -6,5 +6,6 @@ notes:
       Hover Train
 
       Can attach more cars later
+  - text: Alliance of guild
 id: ed6aa044-de65-4743-9673-e2775880bd95
 ---
