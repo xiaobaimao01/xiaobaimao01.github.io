@@ -3,65 +3,58 @@ title: scene rewrite
 properties:
   - property: previous
     value: |-
-      C9 pushed himself off the cold ground. Metal joints clicked as he straightened his legs. He stood still for a moment. He panned his gaze from left to right.
+      [New Mission: Treat the rebel]. 
 
-      His optical sensors flickered. Red text flashed across his sight. The letters moved in random patterns and made no sense. He blinked. The text slowed down and began to organize into rows. The red lines disappeared one by one. A clear image replaced the glitches. 
+      C9 stood still for a moment. He processed the new order.
 
-      C9 looked down at the ground. The rebel lay on the concrete. A hole in his leg leaked dark blood onto the floor. The rebel's chest still moved up and down. He breathed in short, heavy gasps. He did not move his arms. He stared at the sky with wide, vacant eyes.
+      C9 turned away from the bed. He scanned the room for supplies. He walked to a wooden table in the corner. He pushed a thick layer of dust aside with one finger. He found a bowl of water and a strip of clean cloth. He picked up the cloth. He gripped the bowl in his left hand and moved back to the bed.
 
-      C9 lifted his right arm. He gripped the handle of his weapon. He raised the barrel. The sight aligned with the rebel's forehead. C9 held the gun steady.
+      C9 knelt on the floor. He dipped the cloth into the water. He pressed the wet fabric against the hole in the rebel's leg. The man flinched and groaned. C9 did not move his hand. He wiped the blood away from the skin. He wrapped the clean cloth around the wound. He pulled the fabric tight and tied a knot.
 
-      "Please," said the rebel. 
+      [Mission Completed: Treat the rebel]. 
 
-      The rebel looked at C9. He shook with fear. He closed
-      his eyes and waited.
+      The light in the room changed. Gray light turned to yellow. C9 stood up and walked to the stairs. He climbed to the rooftop and stood on the flat stone surface. He faced the rising sun. C9 entered suspend mode. His internal systems slowed. Energy entered his batteries.
 
-      C9 stood over him. Inside C9's vision, red letters
-      flashed. The text read: TARGET ACQUIRED.
+      A few hours passed.
 
-      A light flickered in the display. The red text changed to white. The words shifted to: STATUS UNKNOWN. C9 stopped aiming. He watched a single tear roll
-      down the man's cheek.
+      C9 opened his eyes. The yellow sun rose higher in the sky. He stood up from the flat stone floor. He walked to the stairs. His metal feet hit the stone steps with a loud click. He moved slowly. He went down the stairs and entered the small room.
 
-      The android's fingers loosened. His grip on the rifle relaxed. The barrel dipped
-      slowly toward the ground. The rebel opened one eye. He did not move.
+      The rebel sat on the edge of the bed. He did not lie flat anymore. He rested his back against the cold wall. His hands gripped the edge of the mattress. He breathed slowly. He looked at the door when C9 entered.
 
-      C9 stepped back one pace. He lowered the weapon completely. He did not pull the
-      trigger. C9 stood silent and watched the rebel breathe.
+      C9 stopped in the center of the room. He looked at the rebel's leg. The white cloth stayed tight around the wound. There was no new blood on the fabric. The rebel shifted his weight. He moved his leg a few inches.
 
-      C9 bent his right leg and dropped his knee to the ground.
+      The two stayed silent for a moment. C9 scanned the man's face. He checked the man's heart rate and breathing. The rebel looked at C9. He blinked. Then, the rebel spoke. 
 
-      He tilted his head to the left. He scanned his internal logs for a new command. Nothing appeared. 
+      "Thanks," he said.
 
-      The room remained silent. C9 listened to the steady hum of his cooling fans. He processed the empty data fields in his system. New goals did not appear.
+      His voice was weak. C9 stood still and processed the words.
 
-      Suddenly, a window flickered in the center of his sight. Some text appeared.
+      The rebel moved his shoulders.  He leaned forward on the bed. His eyes stayed on C9.
 
-      [Skill Gained: Sensations]
+       "Why did you save me?" he said.
 
-      Another window popped up immediately below the first one.
+      His voice sounded a bit louder this time. He waited for an answer.
 
-      [Skill Gained: Emotion Emulator]
+      C9 stood still. He opened his internal files. He searched for a rule or an order. He looked for the word "save."
 
-      C9 stared at the letters. He remained in place.
+      His system scanned the mission history. He found the order to treat the rebel, but he found no reason for it. He tried to build a sentence. He opened his mouth, but no sound came out.
 
-      C9 moved his eyes to look at the rebel on the ground. The rebel's chest rose and fell. His breath made a wet sound.
+      A white line appeared across his vision. The line grew. It split the image of the room into two halves. Then, red letters appeared in the center of his sight. The letters said: ERROR. 
 
-      C9 knelt closer to the wounded rebel. He reached out with his right hand. He placed his fingers under the man's head. He lifted the head slowly. The skin felt warm against the cold steel. The rebel groaned. He did not pull away. He looked at C9 with tired eyes.
+      The image of the rebel began to shake. The colors of the room changed from yellow to a dark purple. C9 blinked, but the red text stayed.
 
-      A new signal pulsed in C9's system. His sensors sent data about the warmth of the man's skin. C9 did not have a command for this feeling. He tilted his head. He watched blood drip from the man's leg. The red liquid hit the wet ground as the wind howled.
-
-      A white box flashed in the center of his vision.
-
-      [New Mission: Take the rebel to a nearby village]
-
-      C9 stared at the goal. He looked back at the rebel.
+      C9 stepped back. His left leg did not move correctly. He lost his balance. He tried to reach for the wall, but his arm moved too slowly. His metal body tilted. He hit the stone floor with a loud crash. Dust rose around him. He lay on his back and looked at the ceiling. His vision went black.
   - property: genre
     value: Sci-Fi LitRPG Adventure
   - property: original
     value: |-
-      He looked at the rebel. The rebel was still breathing. C9 put the gun to his back. He wrapped hand around his head. Suddenly text appeared:
+      C9 regained vision. It's in some basement.
 
-      [New Mission: Take the rebel to his nearby village]
+      "You're awake now," the rebel said.
+
+      C9 was confused.
+
+      "Your friends attacked us with those metal birds, so I had to take us into this basement. We're stuck here now." The rebel said
 output: |-
   Please rewrite the following poorly written scene to professional standards. Follow these strict constraints:
 
@@ -70,19 +63,33 @@ output: |-
   - Anchor the scene using the "show, don't tell" technique.
   - Use A2-B1 (Lower-Intermediate) English vocabulary and grammar.
   - Prefer the active voice.
-  - Drive the description using stron g action verbs instead of piling on adjectives.
+  - Drive the description using strong action verbs instead of piling on adjectives.
   - Write at least 190 words, 4 paragraphs, and vary your sentence lengths to maintain a good flow.
   - Must not use metaphor / metonymy. Prose is direct and clean.
 
-  Genre: {{genre}}
+  Genre: Sci-Fi LitRPG Adventure
 
   ## Previous Scene ( For context ):
 
-  {{previous}}
+  [New Mission: Treat the rebel]. 
+
+  C9 stood still for a moment. He processed the new order.
+
+  C9 turned away from the bed. He scanned the room for supplies. He walked to a wooden table in the corner. He pushed a thick layer of dust aside with one finger. He found a bowl of water and a strip of clean cloth. He picked up the cloth. He gripped the bowl in his left hand and moved back to the bed.
+
+  C9 knelt on the floor. He dipped the cloth into the water. He pressed the wet fabric against the hole in the rebel's leg. The man flinched and groaned. C9 did not move his hand. He wiped the blood away from the skin. He wrapped the clean cloth around the wound. He pulled the fabric tight and tied a knot.
+
+  [Mission Completed: Treat the rebel]. 
+
+  The light in the room changed. Gray light turned to yellow. C9 stood up and walked to the stairs. He climbed to the rooftop and stood on the flat stone surface. He faced the rising sun. C9 entered suspend mode. His internal systems slowed. Energy entered his batteries.
 
   ## Original Scene ( To Rewrite ):
 
-  {{original}}
+  It's now morning. The rebel was sitting on the bed.
+
+  C9 came back. They looked at each other.
+
+  "Thanks," the rebel said.
 template: |-
   Please rewrite the following poorly written scene to professional standards. Follow these strict constraints:
 
