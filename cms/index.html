@@ -17,7 +17,7 @@
       button {
         background: black;
         color: white;
-        padding: 0.5rem;
+        padding: 1rem;
       }
     </style>
   </head>
@@ -28,12 +28,22 @@
     <iframe data-tab-content src="/cms/admin/?4" ></iframe>
     <script>
       window._tabs = document.querySelectorAll("[data-tab-content]")
+
+      if (window.innerWidth > window.innerHeight)
+        document.body.style.display = "flex"
+      
     </script>
+    <div style="position: fixed; bottom: 8rem; left: 0; font-size: 20px">
+      <button onclick="window.scrollTo(0, window.innerHeight * 0)">1</button>
+    </div>
+    <div style="position: fixed; bottom: 6rem; left: 0; font-size: 20px">
+      <button onclick="window.scrollTo(0, window.innerHeight * 1)">2</button>
+    </div>
     <div style="position: fixed; bottom: 4rem; left: 0; font-size: 20px">
-      <button onclick="window.scrollBy({top: -window.innerHeight})">Up</button>
+      <button onclick="window.scrollTo(0, window.innerHeight * 2)">3</button>
     </div>
     <div style="position: fixed; bottom: 2rem; left: 0; font-size: 20px">
-      <button onclick="window.scrollBy({top: window.innerHeight})">Do</button>
+      <button onclick="window.scrollTo(0, window.innerHeight * 3)">4</button>
     </div>
   </body>
 <html>
