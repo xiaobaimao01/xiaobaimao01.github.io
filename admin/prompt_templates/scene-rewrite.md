@@ -47,30 +47,30 @@ properties:
     value: Sci-Fi LitRPG Adventure
   - property: original
     value: |-
-      As C9 moved to the fallen rebel lying on ground, another enemy hit him with mace from behind. C9 almost fell
-      C9 leaped forward. Aimed at the attacker. Missed. Missed Again. A rock hit C9's head. He shot back and missed. Then finally hit attacker arm.
+      He looked at the rebel. The rebel was still breathing. C9 put the gun to his back. He wrapped hand around his head. Suddenly text appeared:
+
+      [New Mission: Take the rebel to his nearby village]
 output: |-
   Please rewrite the following poorly written scene to professional standards. Follow these strict constraints:
 
   - Write clean, straightforward prose without flowery language.
-  - Maintain a slo w pace to build the atmosphere.
+  - Maintain a slow pace to build the atmosphere.
   - Anchor the scene using the "show, don't tell" technique.
   - Use A2-B1 (Lower-Intermediate) English vocabulary and grammar.
   - Prefer the active voice.
-  - Drive the description using strong action verbs instead of piling on adjectives.
+  - Drive the description using stron g action verbs instead of piling on adjectives.
   - Write at least 190 words, 4 paragraphs, and vary your sentence lengths to maintain a good flow.
   - Must not use metaphor / metonymy. Prose is direct and clean.
 
-  Genre: Sci-Fi LitRPG Adventure
+  Genre: {{genre}}
 
   ## Previous Scene ( For context ):
 
-
+  {{previous}}
 
   ## Original Scene ( To Rewrite ):
 
-  As C9 moved to the fallen rebel lying on ground, another enemy hit him with mace from behind. C9 almost fell
-  C9 leaped forward. Aimed at the attacker. Missed. Missed Again. A rock hit C9's head. He shot back and missed. Then finally hit attacker arm.
+  {{original}}
 template: |-
   Please rewrite the following poorly written scene to professional standards. Follow these strict constraints:
 
