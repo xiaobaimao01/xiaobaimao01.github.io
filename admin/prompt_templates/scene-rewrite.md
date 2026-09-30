@@ -43,6 +43,18 @@ properties:
       [Skill Gained: Emotion Emulator]
 
       C9 stared at the letters. He remained in place.
+
+      C9 moved his eyes to look at the rebel on the ground. The rebel's chest rose and fell. His breath made a wet sound.
+
+      C9 knelt closer to the wounded rebel. He reached out with his right hand. He placed his fingers under the man's head. He lifted the head slowly. The skin felt warm against the cold steel. The rebel groaned. He did not pull away. He looked at C9 with tired eyes.
+
+      A new signal pulsed in C9's system. His sensors sent data about the warmth of the man's skin. C9 did not have a command for this feeling. He tilted his head. He watched blood drip from the man's leg. The red liquid hit the wet ground as the wind howled.
+
+      A white box flashed in the center of his vision.
+
+      [New Mission: Take the rebel to a nearby village]
+
+      C9 stared at the goal. He looked back at the rebel.
   - property: genre
     value: Sci-Fi LitRPG Adventure
   - property: original
